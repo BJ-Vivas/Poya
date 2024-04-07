@@ -75,9 +75,10 @@ public void addStudent (UserDAO userdao){
             Logger.getLogger(student.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    }
+   }
 
 public void populatetable (DefaultTableModel model){
+       
         try {
             
             model.setRowCount(0);
@@ -91,10 +92,9 @@ public void populatetable (DefaultTableModel model){
                 
                 Object[] row = new Object[columncount];
                 
-                for (int i = 1; i < columncount; i++){
+                for (int i = 1; i <= columncount; i++){
                     row [i-1] = rs.getObject(i);
                 }
-                
                 model.addRow(row);    
             }
             
@@ -102,5 +102,74 @@ public void populatetable (DefaultTableModel model){
             e.printStackTrace();
         }     
     }
+
+public void delete  (int iddatas) throws SQLException{
+    
+        try {
+            sql = "DELETE FROM datas WHERE iddatas=?";
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, iddatas);
+            ps.execute();
+            
+            JOptionPane.showMessageDialog(null, "User successfully deleted");
+        } catch (SQLException e) {
+            
+            Logger.getLogger(student.class.getName()).log(Level.SEVERE, null, e);
+            
+            JOptionPane.showMessageDialog(null, "Failed to delete User");
+        }
+}    
+
+public void update ( UserDAO userdao, int iddatas){
+     try {
+        sql = "UPDATE datas SET Fname=?, Mname=?, Lname=?, Gender=?, Ranking=?, Address=?, Element=?, Level=?, Age=?, Number=? WHERE iddatas=?";
+            ps = connection.prepareStatement(sql);
+            ps.setString(1, userdao.getFname());
+            ps.setString(2, userdao.getMname());
+            ps.setString(3, userdao.getLname());
+            ps.setString(4, userdao.getGender());
+            ps.setString(5, userdao.getRank());
+            ps.setString(6, userdao.getAddress());
+            ps.setString(7, userdao.getElement());
+            ps.setString(8, userdao.getLevel());
+            ps.setInt(9, userdao.getAge()); 
+            ps.setInt(10, userdao.getNumber()); 
+            ps.setInt(11, iddatas);
+            
+            int result = ps.executeUpdate();
+            
+            if (result > 0) {
+            JOptionPane.showMessageDialog(null, "Successfully Updated");
+             } else {
+            JOptionPane.showMessageDialog(null, "Failed to Update");
+        }
+     } catch (Exception e) {
+         Logger.getLogger(student.class.getName()).log(Level.SEVERE, null, e);
+     }
+ }
+
+public void search (UserDAO userdao, String searchtext) throws SQLException{
+    try {
+        
+        sql = ("SELECT * FROM datas WHERE iddatas=?");
+        ps = connection.prepareStatement (sql);
+        
+        ps.setInt(1,userdao.getiddtas());
+        
+        rs = ps.executeQuery();
+        
+        while (rs.next()) {
+            
+            int id = rs.getInt("iddatas");
+            String name = rs.getString("Fname");
+           
+        }
+        rs.close();
+        ps.close();
+    }catch (Exception e) {
+         Logger.getLogger(student.class.getName()).log(Level.SEVERE, null, e);
+     }
+    }
 }
+
 

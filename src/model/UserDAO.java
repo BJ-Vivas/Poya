@@ -12,7 +12,7 @@ package model;
 public class UserDAO {
     
    public String Fname, Mname, Lname, Gender, Rank, Address, Element, Level;
-   int Age, Number;
+   int Age, Number, iddatas;
    
    public String getFname(){
        return Fname;
@@ -82,5 +82,12 @@ public class UserDAO {
    }
    public void setNumber(int Number){
        this.Number = Number;
+   }
+   
+   public int getiddtas(){
+       return iddatas;
+   }
+   public void setiddatas(int iddatas){
+       this.iddatas = iddatas;
    }
 }
