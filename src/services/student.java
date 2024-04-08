@@ -29,12 +29,16 @@ public class student {
     private String sql;
     private ResultSet rs;
     private ResultSetMetaData rm;
-   
+//    private JTable table;
+//   private DefaultTableModel tableModel;
     
     public student(){
        
         this.jdbccon = new JDBCConnector();
         this.connection = new JDBCConnector().getConnection();
+//        table = new JTable();
+//        tableModel = new DefaultTableModel();
+//        table.setModel(tableModel);
     }
 
 public void addStudent (UserDAO userdao){
@@ -80,7 +84,6 @@ public void addStudent (UserDAO userdao){
 public void populatetable (DefaultTableModel model){
        
         try {
-            
             model.setRowCount(0);
             sql = "SELECT * FROM datas";
             ps = connection.prepareStatement(sql);
@@ -102,6 +105,37 @@ public void populatetable (DefaultTableModel model){
             e.printStackTrace();
         }     
     }
+
+public void refreshTable(DefaultTableModel model) {
+     
+    try {
+            model.setRowCount(0);
+            sql = "SELECT * FROM datas";
+            ps = connection.prepareStatement(sql);
+            rs = ps.executeQuery();
+            
+            while (rs.next()) {
+            Object[] rowData = {
+                rs.getInt("iddatas"),
+                rs.getString("Fname"),
+                rs.getString("Mname"),
+                rs.getString("Lname"),
+                rs.getString("Gender"),
+                rs.getString("Ranking"),
+                rs.getString("Address"),
+                rs.getString("Element"),
+                rs.getString("Level"),
+                rs.getInt("Age"),
+                rs.getInt("Number")
+            };
+            model.addRow(rowData);
+        } 
+        rs.close();
+        ps.close(); 
+        } catch (Exception e){
+            e.printStackTrace();
+   } 
+}
 
 public void delete  (int iddatas) throws SQLException{
     
@@ -140,6 +174,7 @@ public void update ( UserDAO userdao, int iddatas){
             
             if (result > 0) {
             JOptionPane.showMessageDialog(null, "Successfully Updated");
+            
              } else {
             JOptionPane.showMessageDialog(null, "Failed to Update");
         }

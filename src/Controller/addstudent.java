@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import javax.swing.table.DefaultTableModel;
 import model.UserDAO;
 import services.student;
 
@@ -63,15 +64,15 @@ public class addstudent extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(44, 45, 45));
         jPanel1.setForeground(new java.awt.Color(44, 45, 45));
 
-        jLabel1.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First Name");
 
-        jLabel2.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Last Name");
 
-        jLabel3.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Middle Name");
 
@@ -81,30 +82,30 @@ public class addstudent extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Gender");
 
         jRadioButton1.setBackground(new java.awt.Color(44, 45, 45));
         buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jRadioButton1.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton1.setText("Male");
 
         jRadioButton2.setBackground(new java.awt.Color(44, 45, 45));
         buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jRadioButton2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton2.setText("Female");
 
-        jLabel5.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Address");
 
         jComboBox1.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "\t", "Upper Land", "Middle Land", "Lower Land", "No Land" }));
 
-        jLabel6.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Contact No.");
 
@@ -114,14 +115,14 @@ public class addstudent extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Level");
 
         jComboBox2.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "\t", "Beginner", "Intermediate", "Expert", "Supreme" }));
 
-        jLabel8.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Rank");
 
@@ -156,15 +157,15 @@ public class addstudent extends javax.swing.JFrame {
         jLabel15.setForeground(new java.awt.Color(204, 204, 204));
         jLabel15.setText("Rank 4 - King");
 
-        jLabel16.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Element");
 
         jComboBox4.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "\t", "Fire", "Water", "Wind" }));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Snap ITC", 0, 18)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(44, 45, 45));
+        jButton1.setFont(new java.awt.Font("Tempus Sans ITC", 0, 24)); // NOI18N
         jButton1.setText("Add");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,8 +173,8 @@ public class addstudent extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jButton2.setFont(new java.awt.Font("Snap ITC", 0, 18)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(44, 45, 45));
+        jButton2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 24)); // NOI18N
         jButton2.setText("Close");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,7 +182,7 @@ public class addstudent extends javax.swing.JFrame {
             }
         });
 
-        jLabel17.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Age");
 
@@ -286,7 +287,7 @@ public class addstudent extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addGap(45, 45, 45)))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -400,7 +401,7 @@ public class addstudent extends javax.swing.JFrame {
         userdao.setNumber(Number);
         
         Std.addStudent(userdao);
-      
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed

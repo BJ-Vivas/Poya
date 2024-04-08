@@ -59,7 +59,7 @@ public class informations extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(44, 45, 45));
 
-        jLabel3.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Middle Name");
 
@@ -70,7 +70,7 @@ public class informations extends javax.swing.JFrame {
         });
 
         jButton3.setBackground(new java.awt.Color(44, 45, 45));
-        jButton3.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Delete");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -80,7 +80,7 @@ public class informations extends javax.swing.JFrame {
         });
 
         jButton2.setBackground(new java.awt.Color(44, 45, 45));
-        jButton2.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Update");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -92,37 +92,37 @@ public class informations extends javax.swing.JFrame {
         jComboBox2.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "\t", "Beginner", "Intermediate", "Expert", "Supreme" }));
 
-        jLabel16.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Element");
 
         jRadioButton2.setBackground(new java.awt.Color(44, 45, 45));
-        jRadioButton2.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jRadioButton2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton2.setText("Female");
 
-        jLabel4.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Gender");
 
-        jLabel17.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Age");
 
-        jLabel7.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Level");
 
-        jLabel6.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Contact No.");
 
-        jLabel5.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Address");
 
         jRadioButton1.setBackground(new java.awt.Color(44, 45, 45));
-        jRadioButton1.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jRadioButton1.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton1.setText("Male");
 
@@ -132,7 +132,7 @@ public class informations extends javax.swing.JFrame {
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("First Name");
 
@@ -142,16 +142,16 @@ public class informations extends javax.swing.JFrame {
         jComboBox1.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "\t", "Upper Land", "Middle Land", "Lower Land", "No Land" }));
 
-        jLabel9.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Id");
 
-        jLabel2.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Last Name");
 
         jButton1.setBackground(new java.awt.Color(44, 45, 45));
-        jButton1.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Close");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -174,7 +174,7 @@ public class informations extends javax.swing.JFrame {
         jComboBox3.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "\t", "Common", "Prince", "King", "Native", "Arch", "Divine" }));
 
-        jLabel8.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Tempus Sans ITC", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Rank");
 

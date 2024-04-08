@@ -44,7 +44,7 @@ public class frontpage extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(153, 92, 160));
 
         jButton2.setBackground(new java.awt.Color(44, 45, 45));
-        jButton2.setFont(new java.awt.Font("Snap ITC", 0, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 24)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Add Student");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -54,7 +54,7 @@ public class frontpage extends javax.swing.JFrame {
         });
 
         jButton3.setBackground(new java.awt.Color(44, 45, 45));
-        jButton3.setFont(new java.awt.Font("Snap ITC", 0, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Tempus Sans ITC", 0, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Student Informations");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -66,7 +66,7 @@ public class frontpage extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Controller/wel.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        jLabel2.setFont(new java.awt.Font("Snap ITC", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 0, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("WELCOME TO DRAGON SCHOOL");
 
@@ -87,7 +87,7 @@ public class frontpage extends javax.swing.JFrame {
                         .addComponent(jButton3))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(46, 46, 46)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel2)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
